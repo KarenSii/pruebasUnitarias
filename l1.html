@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Ordenamiento</title>
+  </head>
+  <body ng-controller="mainController">
+    <h1>Ordenamiento</h1>
+    <h4>Tus tres valores son:</h4>
+    <ul>
+      <li ng-repeat="x in num">{{x}}</li>
+    </ul>
+    <h4>Los valores ordenados son:</h4>
+    <ul>
+      <li ng-repeat="x in num" | orderBy="true">{{x}}</li>
+    </ul>
+    <button ng-click="ordenar()">ordenar</button>
+    <h4>Los valores ordenados son:</h4>
+    <ul>
+      <li  ng-repeat="y in num">{{y}}</li>
+    </ul>
+
+   <script src="js/angular-1.5.0-rc.1/angular.js"></script>
+   <script src="js/angular-1.5.0-rc.1/angular-route.js"></script>
+   <script src="l1.js"></script>
+  </body>
+</html>
